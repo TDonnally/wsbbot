@@ -7,11 +7,7 @@ const app = express();
 //OAuth2
 const snoowrap = require('snoowrap')
 const r = new snoowrap({
-    //PLACE IN .env FILE
-    userAgent: 'wsbbubble',
-    clientId: 'mb17ZHhWtCPi4g',
-    clientSecret: 'hLQMFc_IstEFthlnznfOFbrMwx4',
-    refreshToken: '20545328-LH_zDcon5_1TOMsTeqMu86uKj5Y'
+    
   });
 
 app.use(express.static('public'));
