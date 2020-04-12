@@ -1,0 +1,53 @@
+html, body{
+    background-color: #E5FDFF;
+    font-family: 'Nova Mono', monospace;
+    height:100%;
+    margin: 0;
+}
+#chartContainer{
+    position: absolute;
+    height: 100vh; 
+    width: 80%;
+    left: 10%;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#loading{
+    position: absolute;
+    width: 80%;
+    height: 100vh;
+    opacity: 100;
+    background-color: #E5FDFF;
+    left: 10%;
+    display:table;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+#content{
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+#logo{
+    border-radius: 100%;
+    border-style: solid;
+    border-color: coral;
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+#overlay{
+    position: relative;
+    
+}
